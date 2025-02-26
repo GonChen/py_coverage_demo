@@ -79,10 +79,7 @@ def worker_process(method, n, result_queue, process_name):
     })
 
 
-def main():
-    # 要计算的斐波那契数
-    n = 35
-    
+def main(n=35):    
     # 创建结果队列
     result_queue = mp.Queue()
     
